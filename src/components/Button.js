@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Button() {
+function Button({text, color, image = "", type = "Normal"}) {
   return (
-    <div></div>
+    <div>
+        {type === "Normal" ? (<></>) : (<></>)}
+    </div>
   )
 }
 

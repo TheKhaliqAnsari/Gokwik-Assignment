@@ -1,10 +1,10 @@
-import InputForm from "./components/InputForm";
+import React from 'react';
+import LoginForm from './components/LoginForm';
 
-
-function App() {
+const App = () => {
   return (
-    <div>
-      <InputForm/>
+    <div className="flex items-center justify-center min-h-screen bg-blue-800">
+        <LoginForm />
     </div>
   );
 }
