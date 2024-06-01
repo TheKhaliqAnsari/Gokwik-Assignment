@@ -52,7 +52,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="bg-white p-6 lg:w-96 m-5 h-[650px] lg:absolute lg:right-0 lg:top-[-72px] border border-2">
+    <div className="bg-white p-6 sm:w-96 sm:m-5 h-[650px] sm:absolute sm:right-0 sm:top-[-72px] border-2 sm:max-w-96 w-[85%] max-w-96 m-auto">
     <form onSubmit={handleSubmit(onSubmit)}>
       <h2 className="text-2xl font-bold mb-4">Login to Dashboard</h2>
       <div className="mb-4">
