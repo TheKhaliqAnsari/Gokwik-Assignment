@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import Footer from './Footer';
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phonePattern = /^[0-9]{10}$/;
@@ -51,7 +52,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="bg-white p-6 w-96 m-5 h-[650px]">
+    <div className="bg-white p-6 lg:w-96 m-5 h-[650px] lg:absolute lg:right-0 lg:top-[-72px] border border-2">
     <form onSubmit={handleSubmit(onSubmit)}>
       <h2 className="text-2xl font-bold mb-4">Login to Dashboard</h2>
       <div className="mb-4">
@@ -86,11 +87,9 @@ const LoginForm = () => {
         <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google" className="mr-2 bg-white size-5" />
         Sign in with Google
       </button>
-      <footer className="mt-80 text-center text-xs">
-        <p>Protected by reCAPTCHA and the Google</p>
-        <p><span className='text-blue-400 font-bold'>Privacy Policy</span> & <span className='text-blue-400 font-bold'> Terms of Service</span> apply.</p>
-      </footer>
     </form>
+     <Footer/>
+
     </div>
   );
 }
